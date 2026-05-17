@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export const ProfileCard = ({
   name = "Ali Hussain Sagir",
   role = "Front End Developer",
-  imageSrc = "/images/profile.png",
+  imageSrc = "/images/profile.jpeg",
   avatarSize = "w-16 h-16",
   imageWidth = 64,
   imageHeight = 64,

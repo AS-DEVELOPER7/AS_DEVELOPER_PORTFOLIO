@@ -28,7 +28,7 @@ export const AboutPortrait = () => {
         }
       >
         <Image
-          src="/images/profile.png"
+          src="/images/profile.jpeg"
           alt="Ali Hussain Sagir Portrait"
           fill
           className="object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-out group-hover:scale-[1.02]"
