@@ -28,9 +28,7 @@ export const Hero = ({ children }) => {
           topLeftComponent={
             <div className="flex items-center  gap-6 select-none pb-3 pr-3">
               <Link href="/" className="flex items-center gap-2.5">
-                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                  <div className="w-1.5 h-1.5 bg-secondary rounded-full" />
-                </div>
+                <img src="/AS.svg" alt="AS Logo" className="w-6 h-6 object-contain" />
                 <span className="text-primary font-semibold text-lg tracking-tight">
                   AS-DEVELOPER
                 </span>
