@@ -68,6 +68,7 @@ export const HeroContent = () => {
         <motion.button
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
+          onClick={() => window.open("/resume.pdf", "_blank")}
           className="group relative flex items-center gap-2 h-12 px-8 rounded-xl bg-primary text-secondary font-medium  transition-all duration-300 overflow-hidden"
         >
           {/* Subtle Shimmer Overlay */}
