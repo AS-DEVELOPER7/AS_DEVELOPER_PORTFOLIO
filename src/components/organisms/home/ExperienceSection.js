@@ -14,7 +14,14 @@ export const ExperienceSection = () => {
           company="Al Nada International Exchange"
           location="Kuwait City, Kuwait"
           description="Architected and led the development of the Al Nada Exchange mobile remittance app from scratch using React Native Expo. Spearheaded the Next.js HRMS platform featuring custom Face Recognition automated check-ins, developed high-performance rate display systems, and optimized core frontend architectures."
-          technologies={["React Native", "Next.js", "Socket.io", "REST APIs", "Expo", "Redux.js"]}
+          technologies={[
+            "React Native",
+            "Next.js",
+            "Socket.io",
+            "REST APIs",
+            "Expo",
+            "Redux.js",
+          ]}
         />
       ),
     },
@@ -26,12 +33,18 @@ export const ExperienceSection = () => {
           company="Taqanal Energy Pvt. Ltd"
           location="Bengaluru, India"
           description="Built a data-heavy energy monitoring web dashboard using React.js featuring real-time graphing. Developed and documented scalable REST APIs using Loopback, and launched a React Native mobile application for remote personnel sync."
-          technologies={["React.js", "React Native", "Loopback", "REST APIs", "Redux"]}
+          technologies={[
+            "React.js",
+            "React Native",
+            "Loopback",
+            "REST APIs",
+            "Redux",
+          ]}
         />
       ),
     },
     {
-      title: "2022",
+      title: "Early 2022",
       content: (
         <TimelineEntry
           role="Frontend Developer Intern"
