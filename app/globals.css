@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/* 1. Import Hanken Grotesk for the Nordic aesthetic */
+
+:root {
+  /* Light Theme */
+  --primary: #0e1011;
+  --secondary: #ffffff;
+  --tertiary: #2abe3e;
+  --accent-tertiary: #3b82f6;
+  --neutral: #f1f1f1;
+  
+  /* Typography Scale */
+  --font-hanken: "Hanken Grotesk", sans-serif;
+}
+
+.dark {
+  /* Dark Theme */
+  --primary: #ffffff;
+  --secondary: #0e1011;
+  --tertiary: #2abe3e;
+  --accent-tertiary: #3b82f6;
+  --neutral: #1e2223;
+}
+
+@theme inline {
+  /* Color Mapping */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-accent-tertiary: var(--accent-tertiary);
+  --color-neutral: var(--neutral);
+
+  /* Font Mapping */
+  --font-sans: var(--font-hanken);
+
+  /* Radius Mapping */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* Spacing Scale */
+  --spacing-container: 2rem;
+  --spacing-stack: 1.5rem;
+  --spacing-section: 4rem;
+}
+
+/* 2. Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-family: var(--font-hanken);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Headlines hierarchy from DESIGN.md */
+  h1 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  ::selection {
+    background-color: rgba(234, 244, 255, 1) !important;
+    color: rgba(0, 153, 255, 1)  !important;
+  }
+}

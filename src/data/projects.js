@@ -1,0 +1,106 @@
+// Centralized Single Source of Truth for all Showcase Projects
+export const projects = [
+  {
+    id: "tarmal",
+    name: "Tarmal Creation",
+    subtext:
+      "A modern, Scandinavian-inspired e-commerce platform showcasing Tarmal's handcrafted fashion, textiles, and design collections, blending premium editorial aesthetics with seamless checkouts.",
+    bgColor: "bg-[#EFEAE6]",
+    borderColor: "border-neutral/10",
+    imageSrc: "/work/tarmal-creation/image-1.png",
+    imageAlt: "Tarmal Creation E-commerce Mockup",
+    priority: true,
+    isMobile: false,
+    client: "Tarmal Group",
+    service: "E-commerce / React",
+    url: "https://tarmalcreation.vercel.app/",
+    year: "2026",
+    testimonial: {
+      quote:
+        "Outstanding creativity, structured focus, and highly professional service from Elias.",
+      clientName: "Sarah Jenkins",
+      clientRole: "Design Director",
+      stars: 5,
+    },
+    about: [
+      "Tarmal Creation was architected to showcase high-end, artisanal textile designs. The interface embraces a minimalist luxury design system, reflecting the brand’s deep Nordic ethos of structure, spatial breathing room, and editorial elegance.",
+      "Built on React and fully optimized using server-side Next.js APIs, it implements standard customer carts, dynamic inventory filters, and asynchronous catalog searching that balances heavy imagery with instant execution.",
+    ],
+    gallery: [
+      "/work/tarmal-creation/image-1.png",
+      "/work/tarmal-creation/image-2.png",
+      "/work/tarmal-creation/image-3.png",
+      "/work/tarmal-creation/image-4.png",
+      "/work/tarmal-creation/image-5.png",
+      "/work/tarmal-creation/image-6.png",
+    ],
+    nextId: "al-nada",
+    nextName: "Al Nada Exchange",
+  },
+  // {
+  //   id: "dine-ease",
+  //   name: "Dine Ease",
+  //   subtext:
+  //     "A luxurious, state-of-the-art restaurant management and customer culinary platform designed to stream table bookings, live menu customization, and back-of-house coordination.",
+  //   bgColor: "bg-[#F3F2EE]",
+  //   borderColor: "border-neutral-200/60",
+  //   imageSrc: "/work/dine-ease/image-1.png",
+  //   imageAlt: "Dine Ease Restaurant and Culinary Platform Mockup",
+  //   priority: false,
+  //   isMobile: false,
+  //   client: "Dine Culinary",
+  //   service: "Web Platform / Next.js",
+  //   year: "2025",
+  //   testimonial: {
+  //     quote:
+  //       "A complete game changer for our branch operations. Dine Ease keeps our kitchens synchronized.",
+  //     clientName: "Marcus Vance",
+  //     clientRole: "Head of Hospitality",
+  //     stars: 5,
+  //   },
+  //   about: [
+  //     "Dine Ease unifies critical restaurant reservations with internal service workflows. Patrons can explore dynamic seasonal menu items, configure custom dietary tags, and request exact dining table coordinates in real-time.",
+  //     "The backend features robust state-machine synchronization pipelines that update kitchen monitors instantly when hosts make floor-plan modifications, increasing operational table turn times by over 20%.",
+  //   ],
+  //   gallery: ["/work/dine-ease/image-1.png"],
+  //   nextId: "al-nada",
+  //   nextName: "Al Nada Exchange",
+  // },
+  {
+    id: "al-nada",
+    name: "Al Nada Exchange",
+    subtext:
+      "A high-performance React Native mobile remittance application facilitating real-time currency conversion, swift international money transfers, and transaction history tracking.",
+    bgColor: "bg-gradient-to-br from-[#0B1A30] to-[#122A4A]",
+    borderColor: "border-neutral-800",
+    imageSrc: "/work/al-nada/image-1.png",
+    imageAlt: "Al Nada Exchange Mobile App Showcase",
+    url: "https://downloadapp.alnadaex.com/v1/navigate_app",
+    priority: false,
+    isMobile: true,
+    client: "Al Nada International",
+    service: "Mobile App / React Native",
+    year: "2026",
+    testimonial: {
+      quote:
+        "The React Native remittance application is exceptionally fast, secure, and delightful to navigate daily.",
+      clientName: "Ali Al Hussain",
+      clientRole: "Managing Director",
+      stars: 5,
+    },
+    about: [
+      "Al Nada Exchange is built utilizing high-performance React Native Expo guidelines. It supports swift cross-border transactions, live digital currency exchange calculations, and secure beneficiary address vaults.",
+      "The application leverages biometric locks, native key-chain secure storage layers, and optimized gesture sheets to create a frictionless, banking-grade remittance flow.",
+    ],
+    gallery: [
+      "/work/al-nada/image-1.png",
+      "/work/al-nada/image-2.png",
+      "/work/al-nada/image-3.png",
+      "/work/al-nada/image-4.png",
+      "/work/al-nada/image-5.png",
+      "/work/al-nada/image-6.png",
+    ],
+    nextId: "tarmal",
+    nextName: "Tarmal Creation",
+  },
+];
