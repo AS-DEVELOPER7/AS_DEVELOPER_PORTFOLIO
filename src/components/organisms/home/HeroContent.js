@@ -28,11 +28,11 @@ export const HeroContent = () => {
           delay: 0.2,
           ease: [0.16, 1, 0.3, 1],
         }}
-        className="text-5xl font-medium tracking-tight text-primary leading-[1.2] transition-colors"
+        className="text-4xl font-medium tracking-tight text-primary leading-[1.2] transition-colors"
       >
-        Refining the Digital <br />
+        Crafting High-Performance <br />
         <CanvasText
-          text="Landscape."
+          text="Web & Mobile Apps."
           className="text-primary font-medium"
           backgroundClassName="bg-blue-600 dark:bg-blue-700"
           colors={[
@@ -53,7 +53,7 @@ export const HeroContent = () => {
       </motion.h1>
 
       <TextGenerateEffect
-        words="A fusion of minimalist design principles and modern engineering. Crafting immersive, high-performance interfaces that bridge the gap between vision and reality."
+        words="Frontend Developer specializing in high-performance Web and Mobile applications. Crafting secure, scalability-focused interfaces using Next.js and React Native."
         className=" leading-relaxed font-normal max-w-2xl transition-colors"
         // duration={0.8}
       />

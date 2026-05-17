@@ -2,7 +2,6 @@
 import React from "react";
 import { Timeline, TimelineEntry } from "@/components/atoms/ui/timeline";
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
 import { SectionBadge } from "@/components/atoms/ui/section-badge";
 
 export const ExperienceSection = () => {
@@ -13,12 +12,9 @@ export const ExperienceSection = () => {
         <TimelineEntry
           role="Frontend Developer"
           company="Al Nada International Exchange"
-          location="Kuwait City"
-          description="Architected the flagship mobile app from scratch using React Native
-            Expo. Spearheaded a Next.js HR Management System featuring facial
-            recognition attendance, and engineered a real-time Socket.io tablet
-            application for in-branch rate displays."
-          technologies={["React Native", "Next.js", "Socket.io", "REST APIs"]}
+          location="Kuwait City, Kuwait"
+          description="Architected and led the development of the Al Nada Exchange mobile remittance app from scratch using React Native Expo. Spearheaded the Next.js HRMS platform featuring custom Face Recognition automated check-ins, developed high-performance rate display systems, and optimized core frontend architectures."
+          technologies={["React Native", "Next.js", "Socket.io", "REST APIs", "Expo", "Redux.js"]}
         />
       ),
     },
@@ -28,26 +24,21 @@ export const ExperienceSection = () => {
         <TimelineEntry
           role="Frontend Developer Intern"
           company="Taqanal Energy Pvt. Ltd"
-          location="Bengaluru"
-          description="Built a data-heavy energy monitoring dashboard utilizing React.js
-            for real-time graphing. Developed a scalable REST API using the
-            Loopback framework and launched a React Native mobile app for remote
-            field personnel."
-          technologies={["React.js", "React Native", "Loopback", "Redux"]}
+          location="Bengaluru, India"
+          description="Built a data-heavy energy monitoring web dashboard using React.js featuring real-time graphing. Developed and documented scalable REST APIs using Loopback, and launched a React Native mobile application for remote personnel sync."
+          technologies={["React.js", "React Native", "Loopback", "REST APIs", "Redux"]}
         />
       ),
     },
     {
-      title: "Early 2022",
+      title: "2022",
       content: (
         <TimelineEntry
           role="Frontend Developer Intern"
           company="OrangeFox"
-          location="Mumbai"
-          description="Delivered custom-built web interfaces tailored to specific business
-            logic and branding. Implemented global state management using
-            Redux.js to ensure state persistence across dynamic user sessions."
-          technologies={["React.js", "Redux.js", "CSS3/HTML5"]}
+          location="Mumbai, India"
+          description="Delivered customized, responsive web interfaces tailored to business logic and branding using React.js. Implemented scalable global state management pipelines using Redux.js to ensure data persistence across user sessions."
+          technologies={["React.js", "Redux.js", "HTML5", "CSS3"]}
         />
       ),
     },

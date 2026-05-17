@@ -36,7 +36,6 @@ export default function Home() {
           <div className="mb-20 w-full">
             <SocialSection />
           </div>
-
           {/* Footer */}
           <Footer />
         </div>

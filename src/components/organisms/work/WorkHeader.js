@@ -28,7 +28,7 @@ export const WorkHeader = () => {
             animationDuration={10} // Sped up slightly so it's noticeable but smooth
           />
           <TextGenerateEffect
-            words="Showcasing my latest projects crafted with creativity and precision."
+            words="A selected showcase of production-ready applications, custom fintech platforms, and internal tools engineered with high fidelity."
             className=" leading-relaxed font-normal max-w-2xl transition-colors"
             // duration={0.8}
           />

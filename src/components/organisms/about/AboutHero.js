@@ -31,7 +31,7 @@ export const AboutHero = () => {
         >
           Hi, I&apos;m Ali
           <CanvasText
-            text="Web Designer & Developer."
+            text="Frontend Developer."
             className="text-primary font-medium"
             backgroundClassName="bg-blue-600 dark:bg-blue-700"
             colors={[
@@ -52,9 +52,7 @@ export const AboutHero = () => {
         </motion.h1>
         {/* Primary Narrative */}
         <TextGenerateEffect
-          words="I create custom websites that blend creativity and functionality, using
-        state-of-the-art framework technologies like Next.js and React Native to
-        craft unique, immersive digital experiences for each client."
+          words="I architect and build premium web and mobile applications from the ground up, utilizing high-performance frameworks like Next.js and React Native Expo to deliver banking-grade security, real-time synchronization, and stellar responsiveness."
           className=" leading-relaxed font-normal max-w-2xl transition-colors"
           // duration={0.8}
         />

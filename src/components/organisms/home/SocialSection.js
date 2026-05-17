@@ -8,22 +8,22 @@ export const SocialSection = () => {
     {
       title: "GitHub",
       iconClass: "fa-brands fa-github",
-      href: "https://github.com",
+      href: "https://github.com/AS-DEVELOPER7",
     },
     {
       title: "LinkedIn",
       iconClass: "fa-brands fa-linkedin-in",
-      href: "https://linkedin.com",
+      href: "https://linkedin.com/in/as-developer",
     },
     {
-      title: "Twitter / X",
-      iconClass: "fa-brands fa-x-twitter",
-      href: "https://twitter.com",
+      title: "Phone",
+      iconClass: "fa-solid fa-phone",
+      href: "tel:+96594453835",
     },
     {
       title: "Email",
       iconClass: "fa-solid fa-envelope",
-      href: "mailto:hello@example.com",
+      href: "mailto:alihussainsagir.dev@gmail.com",
     },
   ];
 
@@ -37,11 +37,10 @@ export const SocialSection = () => {
         className="flex flex-col gap-2  "
       >
         <h2 className="text-2xl  font-bold tracking-tight text-primary">
-          Let's Connect.
+          Let&apos;s Connect.
         </h2>
         <p className="text-primary/60 text-base font-medium  leading-relaxed">
-          I'm always open to discussing product design work or partnership
-          opportunities.
+          I&apos;m always open to discussing new opportunities, collaborations, or engineering solutions.
         </p>
       </motion.div>
 

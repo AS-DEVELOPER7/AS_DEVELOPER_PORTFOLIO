@@ -276,9 +276,9 @@ export const TimelineEntry = ({
           <p className="text-primary/60 text-sm  font-medium">
             {company} • {location}
           </p>
-          <p className="text-primary/80 leading-relaxed text-base ">
+          <div className="text-primary/80 leading-relaxed text-base ">
             {description}
-          </p>
+          </div>
           <div className="flex flex-wrap gap-2 ">
             {technologies?.map((tech) => (
               <span

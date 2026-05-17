@@ -1,35 +1,35 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { Paintbrush, Layers, Cpu, Globe } from "lucide-react";
+import { Smartphone, Layers, Cpu, Globe } from "lucide-react";
 import { ServiceCard } from "@/components/molecules/ServiceCard";
 import { SectionBadge } from "@/components/atoms/ui/section-badge";
 
 export const ServicesSection = () => {
   const services = [
     {
-      title: "Web Design",
-      icon: Paintbrush,
+      title: "Cross-Platform Mobile Apps",
+      icon: Smartphone,
       description:
-        "Creating stunning, user-centric websites that elegantly represent your brand, blending contemporary layout principles with high-contrast layouts.",
+        "Crafting high-performance, production-ready iOS & Android applications from scratch using React Native, Expo, Redux, and REST APIs, securing biometric and native storage systems.",
     },
     {
-      title: "UX/UI Design",
+      title: "Web Applications (SSR)",
       icon: Layers,
       description:
-        "Designing highly functional interactive wireframes and seamless user flows optimized to increase engagement, usability, and modern aesthetics.",
+        "Architecting robust, secure, and SEO-friendly web applications utilizing Next.js, React, and modern UI systems like Tailwind CSS, optimized for exceptional performance and loading speeds.",
     },
     {
-      title: "Framer Development",
+      title: "Real-time Sync & APIs",
       icon: Cpu,
       description:
-        "Building fully interactive, ultra-responsive web experiences with fluid custom animations, layouts, and rapid prototyping in Framer.",
+        "Engineering instantaneous client-server communication using Socket.io and designing highly scalable, secure, and documented REST APIs via the Loopback framework and Node.js.",
     },
     {
-      title: "Webflow Development",
+      title: "Custom Frontend Modernization",
       icon: Globe,
       description:
-        "Crafting highly scalable, robust production-ready web designs backed by clean layout structures, custom styling rules, and smooth native engines.",
+        "Refactoring legacy software frontends into contemporary, modular interfaces with responsive layout mechanics, prioritising clean state management, accessibility, and high contrast.",
     },
   ];
 
@@ -51,7 +51,7 @@ export const ServicesSection = () => {
         </h2>
         <p className="text-primary/60 text-base font-normal leading-relaxed">
           I specialize in building modular, pixel-perfect user interfaces,
-          high-performance web applications, and seamless interactive user
+          high-performance mobile/web applications, and real-time interactive user
           flows.
         </p>
       </motion.div>

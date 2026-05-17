@@ -19,19 +19,19 @@ export const skillCategories = [
         name: "React Native",
         icon: "fa-brands fa-react",
         desc: "Cross-platform Mobile Apps",
-        score: 4,
+        score: 5,
       },
       {
         name: "Expo",
         icon: "fa-solid fa-mobile-screen-button",
         desc: "EAS Build, CLI & OTA Updates",
-        score: 4,
+        score: 5,
       },
       {
-        name: "Redux",
+        name: "Redux.js",
         icon: "fa-solid fa-diagram-project",
         desc: "State Management & Slices",
-        score: 4,
+        score: 5,
       },
     ],
   },
@@ -64,10 +64,16 @@ export const skillCategories = [
     tag: "BACK",
     skills: [
       {
-        name: "Super Base",
-        icon: "fa-solid fa-database",
-        desc: "PostgreSQL, Auth, Storage & Realtime",
-        score: 5,
+        name: "Node.js",
+        icon: "fa-brands fa-node-js",
+        desc: "Asynchronous Runtime Environment",
+        score: 4,
+      },
+      {
+        name: "Loopback",
+        icon: "fa-solid fa-circle-nodes",
+        desc: "Scalable REST API Development",
+        score: 4,
       },
       {
         name: "REST APIs",
@@ -79,7 +85,7 @@ export const skillCategories = [
         name: "Socket.io",
         icon: "fa-solid fa-bolt",
         desc: "Real-time Event-driven Apps",
-        score: 4,
+        score: 5,
       },
       {
         name: "Firebase",
@@ -93,10 +99,16 @@ export const skillCategories = [
         desc: "Headless Content Architecture",
         score: 4,
       },
+      {
+        name: "Stripe",
+        icon: "fa-solid fa-credit-card",
+        desc: "Payment Processing & Gateways",
+        score: 4,
+      },
     ],
   },
   {
-    title: "Tools & Methodologies",
+    title: "Tools & Platforms",
     tag: "TOOL",
     skills: [
       {
@@ -104,6 +116,18 @@ export const skillCategories = [
         icon: "fa-brands fa-github",
         desc: "CI/CD & Advanced Workflows",
         score: 5,
+      },
+      {
+        name: "Google Play Console",
+        icon: "fa-brands fa-google-play",
+        desc: "App Store Deployments & Manifests",
+        score: 5,
+      },
+      {
+        name: "Android & iOS SDK",
+        icon: "fa-solid fa-mobile-button",
+        desc: "Native SDK Integrations & Configs",
+        score: 4,
       },
       {
         name: "Tailwind CSS",
@@ -115,12 +139,6 @@ export const skillCategories = [
         name: "Responsive Design",
         icon: "fa-solid fa-desktop",
         desc: "Mobile-first Fluid Layouts",
-        score: 5,
-      },
-      {
-        name: "Framer Motion",
-        icon: "fa-solid fa-bezier-curve",
-        desc: "Micro-interactions & Animations",
         score: 5,
       },
     ],

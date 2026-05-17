@@ -5,6 +5,7 @@ import { Hero } from "@/components/organisms/Hero";
 import { CanvasText } from "@/components/atoms/ui/canvas-text";
 import { TextGenerateEffect } from "@/components/atoms/ui/text-generate-effect";
 import { cn } from "@/utils/cn";
+import emailjs from "@emailjs/browser";
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -27,13 +28,33 @@ export const ContactForm = () => {
     }
 
     setStatus("sending");
-    // Simulate API request
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-      // Reset status after a few seconds
-      setTimeout(() => setStatus("idle"), 4000);
-    }, 1500);
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      message: formData.message,
+      to_name: "Ali Hussain Sagir",
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, { publicKey })
+      .then(
+        (response) => {
+          console.log("EMAILJS SUCCESS!", response.status, response.text);
+          setStatus("success");
+          setFormData({ name: "", email: "", message: "" });
+          setTimeout(() => setStatus("idle"), 4000);
+        },
+        (err) => {
+          console.error("EMAILJS FAILED...", err);
+          setStatus("error");
+          setTimeout(() => setStatus("idle"), 4000);
+        }
+      );
   };
 
   return (
@@ -167,6 +188,18 @@ export const ContactForm = () => {
                 >
                   Message Sent!
                   <i className="fa-solid fa-circle-check text-sm" />
+                </motion.span>
+              )}
+              {status === "error" && (
+                <motion.span
+                  key="error"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  className="flex items-center gap-2 text-rose-500 font-extrabold"
+                >
+                  Sending Failed
+                  <i className="fa-solid fa-triangle-exclamation text-sm animate-pulse" />
                 </motion.span>
               )}
             </AnimatePresence>

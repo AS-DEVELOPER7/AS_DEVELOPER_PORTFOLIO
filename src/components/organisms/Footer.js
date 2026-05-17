@@ -41,9 +41,9 @@ export const Footer = () => {
     {
       title: "Socials",
       links: [
-        { name: "GitHub", href: "https://github.com" },
-        { name: "LinkedIn", href: "https://linkedin.com" },
-        { name: "Twitter / X", href: "https://twitter.com" },
+        { name: "GitHub", href: "https://github.com/AS-DEVELOPER7" },
+        { name: "LinkedIn", href: "https://linkedin.com/in/as-developer" },
+        { name: "Email", href: "mailto:alihussainsagir.dev@gmail.com" },
       ],
     },
   ];
