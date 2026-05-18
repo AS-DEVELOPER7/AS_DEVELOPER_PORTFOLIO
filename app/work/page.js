@@ -20,7 +20,7 @@ export default function WorkPage() {
           <div className="mb-16 md:mb-24  w-full">
             <WorkProjects />
           </div>
-          <div className="mb-16 md:mb-24  w-full">
+          <div className="mb-16 md:mb-24 w-full">
             <SocialSection />
           </div>
 

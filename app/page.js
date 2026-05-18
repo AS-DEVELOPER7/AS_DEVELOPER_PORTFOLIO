@@ -33,7 +33,7 @@ export default function Home() {
           </div>
 
           {/* BLOCK 4: Socials */}
-          <div className="mb-16 md:mb-20 w-full">
+          <div className="mb-16 md:mb-24 w-full">
             <SocialSection />
           </div>
           {/* Footer */}

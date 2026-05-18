@@ -29,30 +29,31 @@ export default function WorkDetailPage({ params }) {
           <div>
             <WorkDetailsHero project={project} />
           </div>
-
-          <div>
+          <div className="mb-16 md:mb-24  w-full">
             <WorkDetailsCover project={project} />
           </div>
-
-          {/* Specifications Grid */}
-          <WorkDetailsSpecs project={project} />
-
-          {/* About Section */}
-          <WorkDetailsAbout project={project} />
-
-          {/* Gallery Showcase Section */}
-          <WorkDetailsGallery project={project} />
-
+          {/* Specifications Grid */}{" "}
+          <div className="mb-16 md:mb-24  w-full">
+            <WorkDetailsSpecs project={project} />
+          </div>
+          {/* About Section */}{" "}
+          <div className="mb-16 md:mb-24  w-full">
+            <WorkDetailsAbout project={project} />
+          </div>
+          {/* Gallery Showcase Section */}{" "}
+          <div className="mb-16 md:mb-24  w-full">
+            <WorkDetailsGallery project={project} />
+          </div>
           {/* Next Project Showcase Card */}
           {nextProject && (
-            <WorkDetailsNext project={project} nextProject={nextProject} />
+            <div className="mb-16 md:mb-24  w-full">
+              <WorkDetailsNext project={project} nextProject={nextProject} />
+            </div>
           )}
-
           {/* BLOCK 4: Socials */}
-          <div className="mb-16 md:mb-20 w-full ">
+          <div className="mb-16 md:mb-24 w-full">
             <SocialSection />
           </div>
-
           {/* Footer */}
           <Footer />
         </div>
