@@ -12,7 +12,7 @@ export const WorkDetailsGallery = ({ project }) => {
       <SectionBadge title="Gallery" />
 
       {/* Gallery Images Grid */}
-      <div className="grid grid-cols-2 gap-6 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
         {project.gallery.map((img, idx) => (
           <ProjectMockup
             key={idx}
@@ -20,11 +20,11 @@ export const WorkDetailsGallery = ({ project }) => {
             imageSrc={img}
             imageAlt={`${project.name} Gallery ${idx + 1}`}
             clipPathId={null}
-            className={project.isMobile ? "p-12  rounded-lg" : "p-6 rounded-lg"}
+            className={project.isMobile ? "p-4 sm:p-8 md:p-12 rounded-lg" : "p-4 sm:p-6 rounded-lg"}
             innerClassName={
               project.isMobile
-                ? "w-[40%] aspect-9/19.5 rounded-lg border-neutral-700/40"
-                : "w-[90%]  aspect-video rounded-lg"
+                ? "w-[60%] min-[400px]:w-[50%] md:w-[40%] aspect-9/19.5 rounded-lg border-neutral-700/40"
+                : "w-[95%] sm:w-[90%] md:w-[90%] aspect-video rounded-lg"
             }
           />
         ))}

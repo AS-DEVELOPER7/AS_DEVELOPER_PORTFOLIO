@@ -27,7 +27,7 @@ export const AboutHero = () => {
             delay: 0.2,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="text-4xl font-medium  text-primary  transition-colors"
+          className="text-2xl sm:text-3xl md:text-4xl font-medium  text-primary  transition-colors"
         >
           Hi, I&apos;m Ali
           <CanvasText

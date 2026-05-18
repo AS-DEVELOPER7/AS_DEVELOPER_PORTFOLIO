@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
         {/* Faded Mask */}
         <div className="pointer-events-none absolute inset-0 -z-10 bg-neutral [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 
-        <main className="max-w-xl p-4 mx-auto flex flex-col w-full min-h-screen">
+        <main className="max-w-xl md:p-4 mx-auto flex flex-col w-full min-h-screen">
           {children}
         </main>
       </body>

@@ -90,7 +90,7 @@ export const Footer = () => {
 
       {/* Middle Section */}
       <div className="flex flex-col sm:flex-row justify-between gap-8 sm:gap-16 w-full">
-        <div className="flex gap-16 sm:gap-24">
+        <div className="flex gap-8 min-[400px]:gap-16 sm:gap-24">
           {sections.map((section) => (
             <div key={section.title} className="flex flex-col gap-5">
               <h3 className="text-secondary/50 text-xs font-bold uppercase tracking-widest">

@@ -69,7 +69,7 @@ export const ServiceCard = ({ title, description, index, icon: Icon }) => {
           <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.015] bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-size-[14px_14px] pointer-events-none group-hover/service:opacity-[0.05] transition-opacity duration-500 rounded-3xl" />
 
           {/* Card Body Content */}
-          <div className="p-8 pt-[60px] pb-10 relative z-10">
+          <div className="p-4 pt-12 pb-6 sm:p-6 sm:pt-14 sm:pb-8 md:p-8 md:pt-[60px] md:pb-10 relative z-10">
             <p className="text-primary/60 text-sm md:text-base leading-relaxed font-normal antialiased">
               {description}
             </p>

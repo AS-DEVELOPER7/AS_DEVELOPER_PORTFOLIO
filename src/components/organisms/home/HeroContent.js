@@ -28,7 +28,7 @@ export const HeroContent = () => {
           delay: 0.2,
           ease: [0.16, 1, 0.3, 1],
         }}
-        className="text-4xl font-medium tracking-tight text-primary leading-[1.2] transition-colors"
+        className="text-2xl sm:text-3xl md:text-4xl font-medium tracking-tight text-primary leading-[1.2] transition-colors"
       >
         Crafting High-Performance <br />
         <CanvasText
@@ -63,13 +63,13 @@ export const HeroContent = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1 }}
-        className="flex items-center gap-4 "
+        className="flex flex-col sm:flex-row items-center gap-4 w-full"
       >
         <motion.button
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
           onClick={() => window.open("/resume.pdf", "_blank")}
-          className="group relative flex items-center gap-2 h-12 px-8 rounded-xl bg-primary text-secondary font-medium  transition-all duration-300 overflow-hidden"
+          className="group relative flex items-center justify-center gap-2 h-12 px-8 w-full sm:w-auto rounded-xl bg-primary text-secondary font-medium  transition-all duration-300 overflow-hidden"
         >
           {/* Subtle Shimmer Overlay */}
           <div className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
@@ -82,7 +82,7 @@ export const HeroContent = () => {
           whileHover={{ scale: 1.02, y: -2 }}
           whileTap={{ scale: 0.98 }}
           onClick={() => router.push("/work")}
-          className="flex items-center cursor-pointer gap-2 h-12 px-8 rounded-xl bg-secondary/50 border border-primary/10 text-primary/80 font-medium hover:bg-secondary hover:text-primary hover:border-accent-tertiary/30 transition-all duration-300"
+          className="flex items-center justify-center cursor-pointer gap-2 h-12 px-8 w-full sm:w-auto rounded-xl bg-secondary/50 border border-primary/10 text-primary/80 font-medium hover:bg-secondary hover:text-primary hover:border-accent-tertiary/30 transition-all duration-300"
         >
           <span>View Projects</span>
         </motion.button>

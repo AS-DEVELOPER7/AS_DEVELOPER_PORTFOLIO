@@ -45,7 +45,7 @@ export const SocialSection = () => {
       </motion.div>
 
       {/* Bento Grid */}
-      <div className="grid grid-cols-2  gap-4 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2  gap-4 w-full">
         {/* Standard Social Cards */}
         {socials.map((social, index) => (
           <SocialCard key={social.title} {...social} index={index} />

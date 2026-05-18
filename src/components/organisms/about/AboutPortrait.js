@@ -11,7 +11,7 @@ export const AboutPortrait = () => {
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: "-10%" }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-      className="w-full h-128   group"
+      className="w-full h-64 sm:h-96 md:h-128 group"
     >
       <NordicTabCard
         className="w-full h-full"

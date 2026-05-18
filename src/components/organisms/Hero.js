@@ -26,10 +26,10 @@ export const Hero = ({ children }) => {
         <NordicTabCard
           className="relative w-full transition-all duration-500"
           topLeftComponent={
-            <div className="flex items-center  gap-6 select-none pb-3 pr-3">
+            <div className="flex items-center  gap-2 sm:gap-6 select-none pb-3 pr-3">
               <Link href="/" className="flex items-center gap-2.5">
                 <img src="/AS.svg" alt="AS Logo" className="w-6 h-6 object-contain" />
-                <span className="text-primary font-semibold text-lg tracking-tight">
+                <span className="text-primary font-semibold text-sm sm:text-lg tracking-tight hidden min-[380px]:inline-block">
                   AS-DEVELOPER
                 </span>
               </Link>
@@ -109,7 +109,7 @@ export const Hero = ({ children }) => {
           <HeroDropdown isMenuOpen={isMenuOpen} topOffset={40} />
 
           {/* Children body */}
-          <div className="flex flex-col  p-10 pt-20">{children}</div>
+          <div className="flex flex-col p-4 pt-14 sm:p-6 sm:pt-16 md:p-10 md:pt-20">{children}</div>
         </NordicTabCard>
       </div>
     </section>

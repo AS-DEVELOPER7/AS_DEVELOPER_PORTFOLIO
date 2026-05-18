@@ -24,7 +24,7 @@ export const ProjectMockup = ({
         "relative w-full aspect-16/10 flex items-center justify-center rounded-lg overflow-hidden transition-all duration-300",
         project.bgColor,
         // Adjust responsive card interior padding profiles based on context layout types
-        project.isMobile ? "p-12" : "p-16",
+        project.isMobile ? "p-4 sm:p-8 md:p-12" : "p-6 sm:p-10 md:p-16",
         className,
       )}
       style={
@@ -39,8 +39,8 @@ export const ProjectMockup = ({
           // Mobile viewports scale dynamically through fluid column width steps, locking to standard 9:19.5 phone metrics
           // Desktop layouts maintain standardized device screen dimensions safely
           project.isMobile
-            ? "w-[28%] aspect-9/19.5 rounded-lg  border-neutral-700/40"
-            : "w-[85%] aspect-video rounded-lg  border",
+            ? "w-[50%] min-[400px]:w-[35%] md:w-[28%] aspect-9/19.5 rounded-lg  border-neutral-700/40"
+            : "w-[95%] sm:w-[90%] md:w-[85%] aspect-video rounded-lg  border",
           innerClassName,
         )}
       >

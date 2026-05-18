@@ -70,13 +70,13 @@ export const TracingBeam = ({ children, className }) => {
             // 1. TIMELINE LOGIC
             const startShift = Math.max(currentY, tTop - 50);
             path += `V ${startShift} `;
-            path += `l 47 47 `;
+            path += `l 18 24 `;
 
-            const endTimeline = Math.max(startShift + 47, tBottom - 47);
+            const endTimeline = Math.max(startShift + 24, tBottom - 24);
             path += `V ${endTimeline} `;
-            path += `l -47 47 `;
+            path += `l -18 24 `;
 
-            currentY = endTimeline + 47;
+            currentY = endTimeline + 24;
 
             // Connect cleanly to the next section without doing a second gap cutout
             if (i < children.length - 1) {
@@ -178,7 +178,7 @@ export const TracingBeam = ({ children, className }) => {
       ref={ref}
       className={cn("relative mx-auto h-full w-full", className)}
     >
-      <div className="absolute top-4 -left-[23px] z-50 w-[80px] h-full pointer-events-none">
+      <div className="absolute top-4 left-[-23px] z-50 w-[80px] h-full pointer-events-none">
         <motion.div
           transition={{ duration: 0.2, delay: 0.5 }}
           style={{ top: dotOffset - 8 }}

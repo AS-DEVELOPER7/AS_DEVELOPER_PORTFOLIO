@@ -41,8 +41,8 @@ export const Timeline = ({ data }) => {
       >
         {data.map((item, index) => (
           <div key={index} className="flex  justify-start pb-20">
-            <div className="sticky flex flex-row z-40 items-center top-40 self-start max-w-xs w-[15%]   bg-black ">
-              <div className=" absolute top-0   left-3  bg-secondary  flex items-center justify-center">
+            <div className="sticky flex flex-row z-40 items-center top-40 self-start max-w-xs w-[12%] sm:w-[10%]   bg-black ">
+              <div className=" absolute top-0   left-[-17px]  bg-secondary  flex items-center justify-center">
                 <div className="h-10   w-10 rounded-full bg-secondary  flex items-center justify-center">
                   <div className="h-4 w-4 rounded-full  bg-accent-tertiary p-2" />
                 </div>
@@ -272,7 +272,7 @@ export const TimelineEntry = ({
           </foreignObject>
         )}
       >
-        <div className="flex flex-col gap-6 p-6  pt-14">
+        <div className="flex flex-col gap-6 p-4 pt-12 sm:p-6 sm:pt-14">
           <p className="text-primary/60 text-sm  font-medium">
             {company} • {location}
           </p>
