@@ -21,10 +21,9 @@ export const ProjectMockup = ({
   return (
     <div
       className={cn(
-        "relative w-full aspect-16/10 flex items-center justify-center rounded-lg overflow-hidden transition-all duration-300",
+        "relative w-full flex items-center justify-center rounded-lg overflow-hidden transition-all duration-300",
+        project.isMobile ? "aspect-4/3 md:aspect-16/10" : "aspect-16/10",
         project.bgColor,
-        // Adjust responsive card interior padding profiles based on context layout types
-        project.isMobile ? "p-4 sm:p-8 md:p-12" : "p-6 sm:p-10 md:p-16",
         className,
       )}
       style={
@@ -39,8 +38,8 @@ export const ProjectMockup = ({
           // Mobile viewports scale dynamically through fluid column width steps, locking to standard 9:19.5 phone metrics
           // Desktop layouts maintain standardized device screen dimensions safely
           project.isMobile
-            ? "w-[50%] min-[400px]:w-[35%] md:w-[28%] aspect-9/19.5 rounded-lg  border-neutral-700/40"
-            : "w-[95%] sm:w-[90%] md:w-[85%] aspect-video rounded-lg  border",
+            ? "w-[30%] min-[400px]:w-[26%] md:w-[22%] aspect-9/19.5 rounded-lg  border-neutral-700/40"
+            : "w-[86%] sm:w-[88%] md:w-[82%] aspect-video rounded-lg  border",
           innerClassName,
         )}
       >

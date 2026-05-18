@@ -36,11 +36,12 @@ export const SocialSection = () => {
         viewport={{ once: true }}
         className="flex flex-col gap-2  "
       >
-        <h2 className="text-2xl  font-bold tracking-tight text-primary">
+        <h2 className="text-2xl md:text-3xl  font-bold tracking-tight text-primary">
           Let&apos;s Connect.
         </h2>
-        <p className="text-primary/60 text-base font-medium  leading-relaxed">
-          I&apos;m always open to discussing new opportunities, collaborations, or engineering solutions.
+        <p className="text-primary/60 text-sm md:text-base font-medium  leading-relaxed">
+          I&apos;m always open to discussing new opportunities, collaborations,
+          or engineering solutions.
         </p>
       </motion.div>
 

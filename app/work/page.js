@@ -12,15 +12,15 @@ export default function WorkPage() {
       {/* 1. Header Card */}
       <TracingBeam className="z-50">
         <div className="flex flex-col w-full">
-          <div className="mb-24  w-full">
+          <div className="mb-16 md:mb-24  w-full">
             <WorkHeader />
           </div>
 
           {/* 2. Projects & Social Grid wrapped in TracingBeam */}
-          <div className="mb-24  w-full">
+          <div className="mb-16 md:mb-24  w-full">
             <WorkProjects />
           </div>
-          <div className="mb-24  w-full">
+          <div className="mb-16 md:mb-24  w-full">
             <SocialSection />
           </div>
 

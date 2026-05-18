@@ -16,22 +16,22 @@ export default function AboutPage() {
       <TracingBeam className="z-50">
         {/* Removed the global gap-32. We now control spacing explicitly per block. */}
         <div className="flex flex-col w-full">
-          <div className="mb-24  w-full">
+          <div className="mb-16 md:mb-24  w-full">
             <AboutHero />
           </div>
 
           {/* Large Rounded Portrait Block */}
-          <div className="mb-24  w-full">
+          <div className="mb-16 md:mb-24  w-full">
             <AboutPortrait />
           </div>
 
           {/* Core Expertise (Skills) Grid */}
-          <div className="mb-24  w-full">
+          <div className="mb-16 md:mb-24  w-full">
             <AboutExpertise />
           </div>
 
           {/* BLOCK 4: Socials */}
-          <div className="mb-20 w-full">
+          <div className="mb-16 md:mb-20 w-full">
             <SocialSection />
           </div>
 

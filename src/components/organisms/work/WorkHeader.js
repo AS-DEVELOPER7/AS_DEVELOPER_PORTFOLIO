@@ -5,12 +5,12 @@ import { TextGenerateEffect } from "@/components/atoms/ui/text-generate-effect";
 
 export const WorkHeader = () => {
   return (
-    <div className="w-full mb-6">
+    <div className="w-full ">
       <Hero>
         <div className="py-10 flex flex-col justify-center">
           <CanvasText
             text="Work"
-            className="text-5xl font-bold tracking-tight text-primary mb-4 font-outfit "
+            className="text-3xl md:text-4xl font-bold tracking-tight text-primary mb-4 font-outfit "
             backgroundClassName="bg-blue-600 dark:bg-blue-700"
             colors={[
               "rgba(0, 153, 255, 1)",

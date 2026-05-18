@@ -26,10 +26,10 @@ export const Timeline = ({ data }) => {
   return (
     <div className="w-full  " ref={containerRef}>
       <div className="max-w-7xl mx-auto pt-10 pb-10  space-y-2">
-        <h2 className="text-3xl  font-bold text-primary tracking-tight">
+        <h2 className=" text-2xl md:text-3xl  font-bold text-primary tracking-tight">
           Professional Journey
         </h2>
-        <p className="text-primary/60 text-base  max-w-2xl leading-relaxed">
+        <p className="text-primary/60 text-sm md:text-base  max-w-2xl leading-relaxed">
           A chronological look at the roles and projects that have shaped my
           career, from early explorations to leading complex engineering
           initiatives.
@@ -41,7 +41,7 @@ export const Timeline = ({ data }) => {
       >
         {data.map((item, index) => (
           <div key={index} className="flex  justify-start pb-20">
-            <div className="sticky flex flex-row z-40 items-center top-40 self-start max-w-xs w-[12%] sm:w-[10%]   bg-black ">
+            <div className="sticky flex flex-row z-40 items-center top-40 self-start max-w-xs w-[10%] sm:w-[12%]   bg-black ">
               <div className=" absolute top-0   left-[-17px]  bg-secondary  flex items-center justify-center">
                 <div className="h-10   w-10 rounded-full bg-secondary  flex items-center justify-center">
                   <div className="h-4 w-4 rounded-full  bg-accent-tertiary p-2" />
@@ -276,14 +276,14 @@ export const TimelineEntry = ({
           <p className="text-primary/60 text-sm  font-medium">
             {company} • {location}
           </p>
-          <div className="text-primary/80 leading-relaxed text-base ">
+          <div className="text-primary/80 leading-relaxed text-sm md:text-base ">
             {description}
           </div>
           <div className="flex flex-wrap gap-2 ">
             {technologies?.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 text-xs font-medium bg-accent-tertiary/5 border border-accent-tertiary/10 rounded-full text-primary/90 hover:border-accent-tertiary/30 transition-colors"
+                className="px-3 py-1 text-[10px] md:text-xs font-medium bg-accent-tertiary/5 border border-accent-tertiary/10 rounded-full text-primary/90 hover:border-accent-tertiary/30 transition-colors"
               >
                 {tech}
               </span>

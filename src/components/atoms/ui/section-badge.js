@@ -17,11 +17,11 @@ export const SectionBadge = ({
       viewport={{ once: true, margin: "-10%" }}
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
       className={cn(
-        "bg-neutral rounded-xl py-6 flex items-center justify-center gap-2 group transition-all duration-300 border border-primary/5",
+        "bg-neutral rounded-xl py-4 md:py-6 flex items-center justify-center gap-2 group transition-all duration-300 border border-primary/5",
         className,
       )}
     >
-      <span className="text-primary/80 font-bold uppercase tracking-wider text-sm">
+      <span className="text-primary/80 font-bold uppercase tracking-wider text-xs md:text-sm">
         {title}
       </span>
       {showIcon && Icon && (

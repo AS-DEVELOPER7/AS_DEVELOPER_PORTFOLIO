@@ -44,7 +44,7 @@ export const HeroDropdown = ({ isMenuOpen, topOffset = 37 }) => {
             transition={{ duration: 0.3, delay: 0.1 }}
             className="w-full p-4  flex flex-col justify-center"
           >
-            <div className="flex flex-col w-full gap-4">
+            <div className="flex flex-col w-full md:gap-4">
               {navItems.map((item, i) => (
                 <motion.div
                   key={item.name}
@@ -71,7 +71,7 @@ export const HeroDropdown = ({ isMenuOpen, topOffset = 37 }) => {
                       {item.id}
                     </span>
                     <div className="flex flex-col">
-                      <span className="text-secondary text-lg sm:text-xl font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-500 ease-out">
+                      <span className="text-secondary text-base md:text-lg sm:text-xl font-medium tracking-tight group-hover:translate-x-1 transition-transform duration-500 ease-out">
                         {item.name}
                       </span>
                       <span className="text-secondary/40 text-xs sm:text-sm opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-500 ease-out h-0 group-hover:h-4  overflow-hidden">

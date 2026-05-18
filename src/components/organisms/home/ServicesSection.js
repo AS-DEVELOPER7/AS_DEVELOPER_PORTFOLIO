@@ -46,13 +46,13 @@ export const ServicesSection = () => {
         transition={{ duration: 0.6 }}
         className="flex flex-col gap-2 -mt-4"
       >
-        <h2 className="text-2xl font-bold tracking-tight text-primary">
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">
           Core Expertise.
         </h2>
-        <p className="text-primary/60 text-base font-normal leading-relaxed">
+        <p className="text-primary/60 text-sm md:text-base font-normal leading-relaxed">
           I specialize in building modular, pixel-perfect user interfaces,
-          high-performance mobile/web applications, and real-time interactive user
-          flows.
+          high-performance mobile/web applications, and real-time interactive
+          user flows.
         </p>
       </motion.div>
 

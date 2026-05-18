@@ -25,7 +25,7 @@ export default function WorkDetailPage({ params }) {
     <main className="flex bg-secondary md:rounded-lg transition-all duration-500 min-h-screen p-4 flex-col overflow-clip max-w-7xl mx-auto">
       {/* 1. Header Card */}
       <TracingBeam className="z-50">
-        <div className="flex flex-col w-full gap-16">
+        <div className="flex flex-col w-full gap-8 sm:gap-12 md:gap-16">
           <div>
             <WorkDetailsHero project={project} />
           </div>
@@ -49,7 +49,7 @@ export default function WorkDetailPage({ params }) {
           )}
 
           {/* BLOCK 4: Socials */}
-          <div className="mb-20 w-full ">
+          <div className="mb-16 md:mb-20 w-full ">
             <SocialSection />
           </div>
 

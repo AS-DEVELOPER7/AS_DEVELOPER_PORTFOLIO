@@ -8,7 +8,6 @@ import { ArrowRight } from "lucide-react";
 import { skillCategories } from "@/data/skills";
 
 export const AboutExpertise = () => {
-
   const [activeTab, setActiveTab] = useState(0);
   const activeCategory = skillCategories[activeTab];
 
@@ -37,7 +36,6 @@ export const AboutExpertise = () => {
       viewport={{ once: true, margin: "-10%" }}
       className="w-full space-y-8 "
     >
-      {" "}
       {/* Editorial Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -45,10 +43,10 @@ export const AboutExpertise = () => {
         viewport={{ once: true }}
         className="flex flex-col gap-2  "
       >
-        <h2 className="text-2xl  font-bold tracking-tight text-primary">
+        <h2 className=" text-2xl md:text-3xl  font-bold tracking-tight text-primary">
           Core Expertise
         </h2>
-        <p className="text-primary/60 text-base font-medium  leading-relaxed">
+        <p className="text-primary/60  text-sm md:text-base font-medium  leading-relaxed">
           A curated suite of modern technologies, frameworks, and methodologies
           that I leverage to engineer premium, pixel-perfect user experiences.
         </p>
@@ -139,7 +137,12 @@ export const AboutExpertise = () => {
 
                     <div className="flex items-start gap-3.5 pl-1.5 pr-2 w-[70%]">
                       {typeof skill.icon === "string" ? (
-                        <i className={cn(skill.icon, "text-sm text-primary/30 group-hover:text-accent-tertiary transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-6 mt-1 shrink-0")} />
+                        <i
+                          className={cn(
+                            skill.icon,
+                            "text-sm text-primary/30 group-hover:text-accent-tertiary transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-6 mt-1 shrink-0",
+                          )}
+                        />
                       ) : (
                         <skill.icon className="w-4 h-4 text-primary/30 group-hover:text-accent-tertiary transition-all duration-500 ease-out group-hover:scale-110 group-hover:rotate-6 mt-0.5 shrink-0" />
                       )}

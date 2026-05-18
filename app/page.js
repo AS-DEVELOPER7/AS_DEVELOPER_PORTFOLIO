@@ -15,7 +15,7 @@ export default function Home() {
         <div className="flex flex-col w-full">
           {/* BLOCK 1: Hero & Marquee */}
           {/* Grouping these tells the TracingBeam they are one cohesive unit. */}
-          <div className="flex flex-col gap-24 mb-24  w-full">
+          <div className="flex flex-col gap-20 md:gap-24 mb-16 md:mb-24  w-full">
             <Hero>
               <HeroContent />
             </Hero>
@@ -23,17 +23,17 @@ export default function Home() {
           </div>
 
           {/* BLOCK 2: Services */}
-          <div className="mb-24  w-full">
+          <div className="mb-16 md:mb-24  w-full">
             <ServicesSection />
           </div>
 
           {/* BLOCK 3: Experience */}
-          <div className="mb-24  w-full">
+          <div className="mb-16 md:mb-24  w-full">
             <ExperienceSection />
           </div>
 
           {/* BLOCK 4: Socials */}
-          <div className="mb-20 w-full">
+          <div className="mb-16 md:mb-20 w-full">
             <SocialSection />
           </div>
           {/* Footer */}

@@ -20,12 +20,6 @@ export const WorkDetailsGallery = ({ project }) => {
             imageSrc={img}
             imageAlt={`${project.name} Gallery ${idx + 1}`}
             clipPathId={null}
-            className={project.isMobile ? "p-4 sm:p-8 md:p-12 rounded-lg" : "p-4 sm:p-6 rounded-lg"}
-            innerClassName={
-              project.isMobile
-                ? "w-[60%] min-[400px]:w-[50%] md:w-[40%] aspect-9/19.5 rounded-lg border-neutral-700/40"
-                : "w-[95%] sm:w-[90%] md:w-[90%] aspect-video rounded-lg"
-            }
           />
         ))}
       </div>

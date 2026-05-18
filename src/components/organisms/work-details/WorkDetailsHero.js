@@ -11,12 +11,12 @@ export const WorkDetailsHero = ({ project }) => {
 
   return (
     <Hero>
-      <div className=" flex flex-col gap-10 w-full font-hanken-grotesk">
+      <div className=" flex py-5 flex-col gap-10 w-full font-hanken-grotesk">
         {/* Title & Introduction Block */}
 
         <CanvasText
           text={project.name}
-          className="text-5xl font-bold tracking-tight text-primary mb-4 font-outfit "
+          className="text-3xl sm:text-4xl md:text-5xl  font-bold tracking-tight text-primary mb-4 font-outfit "
           backgroundClassName="bg-blue-600 dark:bg-blue-700"
           colors={[
             "rgba(0, 153, 255, 1)",
@@ -44,7 +44,7 @@ export const WorkDetailsHero = ({ project }) => {
             whileHover={{ scale: 1.02, y: -2 }}
             whileTap={{ scale: 0.98 }}
             onClick={() => window.open(project.url, "_blank")}
-            className="group relative flex cursor-pointer items-center gap-2 h-12 px-8 rounded-xl bg-primary text-secondary font-medium transition-all duration-300 overflow-hidden"
+            className="group relative flex cursor-pointer items-center gap-2 h-12 w-full md:w-auto justify-center px-8 rounded-xl bg-primary text-secondary font-medium transition-all duration-300 overflow-hidden"
           >
             {/* Subtle Shimmer Overlay */}
             <div className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />

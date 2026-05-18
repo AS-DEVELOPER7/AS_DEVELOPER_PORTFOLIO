@@ -29,7 +29,6 @@ export const WorkDetailsNext = ({ project, nextProject }) => {
           <ProjectMockup
             project={nextProject}
             clipPathId={`clip-path-${project.nextId}-next-teaser`}
-            className={nextProject.isMobile ? "p-12" : "p-16"}
           />
         </NordicTabCard>
       </Link>

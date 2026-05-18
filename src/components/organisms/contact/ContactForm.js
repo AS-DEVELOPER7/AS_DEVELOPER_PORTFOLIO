@@ -6,6 +6,8 @@ import { CanvasText } from "@/components/atoms/ui/canvas-text";
 import { TextGenerateEffect } from "@/components/atoms/ui/text-generate-effect";
 import { cn } from "@/utils/cn";
 import emailjs from "@emailjs/browser";
+import { Input } from "@/components/atoms/ui/input";
+import { Textarea } from "@/components/atoms/ui/textarea";
 
 export const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -29,9 +31,12 @@ export const ContactForm = () => {
 
     setStatus("sending");
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+    const serviceId =
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
+    const templateId =
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
+    const publicKey =
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
 
     const templateParams = {
       from_name: formData.name,
@@ -40,21 +45,19 @@ export const ContactForm = () => {
       to_name: "Ali Hussain Sagir",
     };
 
-    emailjs
-      .send(serviceId, templateId, templateParams, { publicKey })
-      .then(
-        (response) => {
-          console.log("EMAILJS SUCCESS!", response.status, response.text);
-          setStatus("success");
-          setFormData({ name: "", email: "", message: "" });
-          setTimeout(() => setStatus("idle"), 4000);
-        },
-        (err) => {
-          console.error("EMAILJS FAILED...", err);
-          setStatus("error");
-          setTimeout(() => setStatus("idle"), 4000);
-        }
-      );
+    emailjs.send(serviceId, templateId, templateParams, { publicKey }).then(
+      (response) => {
+        console.log("EMAILJS SUCCESS!", response.status, response.text);
+        setStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setStatus("idle"), 4000);
+      },
+      (err) => {
+        console.error("EMAILJS FAILED...", err);
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 4000);
+      },
+    );
   };
 
   return (
@@ -64,7 +67,7 @@ export const ContactForm = () => {
         <div className="flex flex-col gap-3">
           <CanvasText
             text="Let's Talk"
-            className="text-4xl sm:text-5xl font-bold tracking-tight text-primary font-outfit"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-primary font-outfit"
             backgroundClassName="bg-blue-600 dark:bg-blue-700"
             colors={[
               "rgba(0, 153, 255, 1)",
@@ -90,58 +93,37 @@ export const ContactForm = () => {
         {/* Interactive Form Card */}
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full">
           {/* Name Field */}
-          <div className="relative group w-full">
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your Name"
-              disabled={status === "sending"}
-              className={cn(
-                "w-full px-5 py-4 text-base font-medium rounded-xl bg-secondary text-primary border border-primary/5 shadow-sm outline-none transition-all duration-300",
-                "focus:border-accent-tertiary focus:ring-4 focus:ring-accent-tertiary/10 placeholder:text-primary/30",
-                "disabled:opacity-60 disabled:cursor-not-allowed",
-              )}
-              required
-            />
-          </div>
+          <Input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Your Name"
+            disabled={status === "sending"}
+            required
+          />
 
           {/* Email Field */}
-          <div className="relative group w-full">
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Your Email"
-              disabled={status === "sending"}
-              className={cn(
-                "w-full px-5 py-4 text-base font-medium rounded-xl bg-secondary text-primary border border-primary/5 shadow-sm outline-none transition-all duration-300",
-                "focus:border-accent-tertiary focus:ring-4 focus:ring-accent-tertiary/10 placeholder:text-primary/30",
-                "disabled:opacity-60 disabled:cursor-not-allowed",
-              )}
-              required
-            />
-          </div>
+          <Input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Your Email"
+            disabled={status === "sending"}
+            required
+          />
 
           {/* Message Field */}
-          <div className="relative group w-full">
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Your Message"
-              rows={5}
-              disabled={status === "sending"}
-              className={cn(
-                "w-full px-5 py-4 text-base font-medium rounded-xl bg-secondary text-primary border border-primary/5 shadow-sm outline-none transition-all duration-300 resize-none",
-                "focus:border-accent-tertiary focus:ring-4 focus:ring-accent-tertiary/10 placeholder:text-primary/30",
-                "disabled:opacity-60 disabled:cursor-not-allowed",
-              )}
-              required
-            />
-          </div>
+          <Textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Your Message"
+            rows={5}
+            disabled={status === "sending"}
+            required
+          />
 
           {/* Submit Button */}
           <button

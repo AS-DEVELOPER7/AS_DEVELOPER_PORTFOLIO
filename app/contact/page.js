@@ -11,12 +11,12 @@ export default function ContactPage() {
       <TracingBeam className="z-50">
         <div className="flex flex-col w-full">
           {/* Main Contact Form & Header Block */}
-          <div className="mb-12 w-full">
+          <div className="mb-16 md:mb-24 w-full">
             <ContactForm />
           </div>
 
           {/* Socials Stack Block */}
-          <div className="mb-24 w-full">
+          <div className="mb-16 md:mb-24 w-full">
             <SocialSection />
           </div>
 
